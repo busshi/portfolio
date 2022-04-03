@@ -8,7 +8,7 @@ author:
   picture: '/assets/authors/busshi.jpeg'
 technos: ['python.png', 'bash.png']
 languages: ['python.png', 'bash.png']
-devTools: ['vim.svg', 'make']
+devTools: ['vim', 'make']
 projectUrl: 'telegram_bot_sample.git'
 cover: '/assets/projects/tgbot/cover.png'
 thumb: ['/tgbot/cover.png', '/tgbot/tgbot.gif']
