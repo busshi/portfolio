@@ -12,6 +12,10 @@ yarn install
 yarn run dev
 ```
 
-On every push to master branch, the project is build and pushed to (Dockerhub)[https://hub.docker.com/repository/docker/busshi] using CircleCI. It is also deployed online.
+On every push to master branch, the project is build and pushed to [Dockerhub](https://hub.docker.com/repository/docker/busshi) using CircleCI. It is also deployed online.
 
-Have a look (here)[https://busshi.fr]
+```bash
+docker pull busshi/portolfio:latest
+```
+
+## Have a look [here](https://busshi.fr)
