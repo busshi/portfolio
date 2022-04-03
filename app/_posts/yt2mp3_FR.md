@@ -6,9 +6,9 @@ date: '11 janvier 2022'
 author:
   name: busshi
   picture: '/assets/authors/busshi.jpeg'
-technos: ['javascript.svg', 'nodejs.svg', 'nextJS', 'nestjs.svg', 'postgres.png']
+technos: ['javascript.svg', 'nodejs.svg', 'nextjs', 'nestjs.svg', 'postgres.png']
 languages: ['javascript.svg', 'nodejs.svg']
-frameworks: ['nextjs.svg', 'nestjs.svg']
+frameworks: ['nextjs', 'nestjs.svg']
 dbs: ['postgres.png']
 devTools: ['vscode']
 deployTools: ['docker.svg', 'docker-compose', 'circleci']

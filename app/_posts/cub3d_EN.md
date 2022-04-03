@@ -8,7 +8,7 @@ author:
   picture: '/assets/authors/busshi.jpeg'
 technos: ['c.svg']
 languages: ['c.svg']
-devTools: ['vim.svg', 'make', 'valgrind', 'lldb']
+devTools: ['vim.svg', 'make', 'lldb']
 projectUrl: 'cub3d.git'
 cover: '/assets/projects/cub3d/cub3d_hd.png'
 thumb: ['/cub3d/cub3d_hd.png', '/cub3d/cub3d.gif']
