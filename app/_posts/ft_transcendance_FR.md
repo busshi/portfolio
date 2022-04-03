@@ -8,7 +8,7 @@ author:
   picture: '/assets/authors/busshi.jpeg'
 technos: ['typescript.svg', 'nodejs.svg', 'nextjs', 'nestjs.svg', 'postgres.png']
 languages: ['typescript.svg', 'nodejs.svg']
-frameworks: ['nextjs', 'nodejs.svg']
+frameworks: ['nextjs', 'nestjs.svg']
 dbs: ['postgres.png']
 devTools: ['vscode']
 deployTools: ['docker.svg', 'circleci', 'github actions']
@@ -25,7 +25,7 @@ Une implémentation web franchement sur-conçue mais pas moins cool du jeu Pong.
 
 Le diagramme suivant représente l'ensemble de l'architecture du projet. Chaque entité est un conteneur docker individuel.
 
-![ft_transcendance architecture](https://i.imgur.com/KQsKRAp.png)
+![ft_transcendance architecture](/assets/projects/transcendance/transcendance_architecture.png)
 
 ## Ce que j'ai appris de ce projet
 

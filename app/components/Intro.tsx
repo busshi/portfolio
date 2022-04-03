@@ -7,7 +7,7 @@ const Intro = () => {
   const { langId } = useContext(langageContext) as LangageContextType;
  
   return (
-    <section className="flex flex-col md:flex-row items-center md:justify-between pt-10 pb-20">
+    <section className="flex flex-col md:flex-row items-center md:justify-between pt-5 pb-14">
       <h1 className="basis-1/3 text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8 mb-4 md:mb-0">
         {SITE_TITLE[langId].content}
       </h1>
