@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1, h2, h3, section, p, ul, footer, .police {
+    font-family: 'Indie Flower', cursive;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/indieflower/v16/m8JVjfNVeKWVnh3QMuKkFcZVaUuH99GUDg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.pushable {
+    background: rgb(100, 33, 2);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+}
+
+.pushableFront {
+    display: block;
+    padding: 6px 42px;
+    padding-top: 10px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background: rgb(180, 98, 5);
+    color: white;
+    transform: translateY(-6px);
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.pushable:hover .pushableFront {
+    transform: translateY(-2px);
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
