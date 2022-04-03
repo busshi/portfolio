@@ -18,9 +18,6 @@ const Icon = ({ name, picture }: Props) => {
           {name === 'nextjs' ?
           <SiNextdotjs className="border border-neutral-200 bg-neutral-200 rounded-full text-black mr-4 w-12 h-12" />
           :
-          name === 'docker-compose' ?
-          <img src='/icons/docker.svg' className="w-12 h-12 rounded-xl mr-4" alt={name}/>
-          :
           name === 'github actions' ?
           <SiGithubactions className="w-12 h-12 ml-3" />
           :

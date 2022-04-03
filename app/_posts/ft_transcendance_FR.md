@@ -11,7 +11,7 @@ languages: ['typescript.svg', 'nodejs.svg']
 frameworks: ['nextjs', 'nodejs.svg']
 dbs: ['postgres.png']
 devTools: ['vscode']
-deployTools: ['docker.svg', 'docker-compose', 'circleci', 'github actions']
+deployTools: ['docker.svg', 'circleci', 'github actions']
 projectUrl: 'ft_transcendance.git'
 cover: '/assets/projects/transcendance/slider.png'
 thumb: ['/transcendance/slider.png', '/transcendance/transcendance.gif']

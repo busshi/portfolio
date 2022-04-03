@@ -6,8 +6,8 @@ date: '2021-03-06'
 author:
   name: busshi
   picture: '/assets/authors/busshi.jpeg'
-technos: ['c.svg']
-languages: ['c.svg']
+technos: ['C.svg']
+languages: ['C.svg']
 devTools: ['vim.svg', 'make', 'lldb']
 projectUrl: 'cub3d.git'
 cover: '/assets/projects/cub3d/cub3d_hd.png'

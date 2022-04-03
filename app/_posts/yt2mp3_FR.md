@@ -11,7 +11,7 @@ languages: ['javascript.svg', 'nodejs.svg']
 frameworks: ['nextjs', 'nestjs.svg']
 dbs: ['postgres.png']
 devTools: ['vscode']
-deployTools: ['docker.svg', 'docker-compose', 'circleci']
+deployTools: ['docker.svg', 'circleci']
 projectUrl: 'yt2mp3.git'
 cover: '/assets/projects/yt2mp3/cover.png'
 thumb: ['/yt2mp3/slider.png', '/yt2mp3/yt2mp3.gif']

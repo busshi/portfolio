@@ -17,11 +17,11 @@ type WrapperProps = {
 }
 
 const Wrapper = ({name, items}: WrapperProps) => (
-  <div className="flex my-16 content-center items-center space-x-5">
+  <div className="grid-cols-2 md:flex my-16 content-center items-center space-x-5">
     <h1 className="text-3xl">
       {name}
     </h1>
-    <div className="flex">
+    <div className="flex mt-3 md:mt-0">
       <IconWrapper items={items} />
     </div>
   </div>
