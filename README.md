@@ -15,7 +15,7 @@ yarn run dev
 On every push to master branch, the project is build and pushed to [Dockerhub](https://hub.docker.com/repository/docker/busshi) using CircleCI. It is also deployed online.
 
 ```bash
-docker pull busshi/portolfio:latest
+docker pull busshi/portfolio:latest
 ```
 
 ## Have a look [here](https://busshi.fr)
