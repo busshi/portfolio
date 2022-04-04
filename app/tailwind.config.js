@@ -15,6 +15,7 @@ module.exports = {
       animation: {
         bounceUp: "bounceUp .2s ease-in-out 1",
         bounceBack: "bounceBack 1s ease-in infinite",
+        spinSlow: 'spin 10s linear infinite'
       }
     },
   },

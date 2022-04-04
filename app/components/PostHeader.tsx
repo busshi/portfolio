@@ -5,7 +5,6 @@ import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 import DateFormatter from './DateFormatter'
-import IconWrapper from './IconWrapper'
 import { Fragment } from 'react'
  
 type Props = {
@@ -13,11 +12,10 @@ type Props = {
   title: string,
   date: string,
   author: Author,
-  technos: string[],
   thumb: string[]
 }
 
-const PostHeader = ({ lang, title, date, author, technos, thumb }: Props) => {
+const PostHeader = ({ lang, title, date, author, thumb }: Props) => {
   
   return (
     <Fragment>
@@ -25,7 +23,7 @@ const PostHeader = ({ lang, title, date, author, technos, thumb }: Props) => {
       <div className="hidden md:block md:mb-12">
         <Avatar size={60} name={author.name} picture={author.picture} />
       </div>
-      <div className="mb-8 md:mb-16 sm:mx-0">
+      <div className="mb-16 sm:mx-0">
         <AwesomeSlider animation="cubeAnimation" startup={true}>
           {thumb.map((item, i) => (
             <div key={i++} data-src={`/assets/projects/${item}`}/>
@@ -33,10 +31,8 @@ const PostHeader = ({ lang, title, date, author, technos, thumb }: Props) => {
           }
         </AwesomeSlider>
       </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="mb-6 text-lg">
+      <div className="w-full md:max-w-[80%] mx-auto mb-6 text-lg">
           <DateFormatter dateString={date} lang={lang}/>
-        </div>
       </div>
     </Fragment>
   )

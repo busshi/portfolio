@@ -2,6 +2,7 @@ import { SiCmake, SiGithubactions, SiKalilinux, SiNextdotjs, SiVim, SiVisualstud
 import {CgCircleci} from 'react-icons/cg';
 import Tooltip from './Tooltip';
 import { VscDebugStepBack } from 'react-icons/vsc';
+import { FaReact } from 'react-icons/fa';
 
 type Props = {
   name: string
@@ -25,6 +26,8 @@ const GetIcon = ({name, picture}: Props) => {
       return <SiVim className="w-12 h-12 text-orange-700/60" />
     else if (name === 'kali')
       return <SiKalilinux className="w-12 h-12" />
+    else if (name === 'reactjs')
+      return <FaReact className="w-12 h-12 animate-spinSlow text-cyan-400" />
     else
       return <img src={picture} className="w-12 h-12 rounded-xl mr-4" alt={name}/>
 }

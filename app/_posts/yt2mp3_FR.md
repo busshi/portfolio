@@ -8,7 +8,7 @@ author:
   picture: '/assets/authors/busshi.jpeg'
 technos: ['javascript.svg', 'nodejs.svg', 'nextjs', 'nestjs.svg', 'postgres.png']
 languages: ['javascript.svg', 'nodejs.svg']
-frameworks: ['nextjs', 'nestjs.svg']
+frameworks: ['nextjs', 'nestjs.svg', 'reactjs']
 dbs: ['postgres.png']
 devTools: ['vscode']
 deployTools: ['docker.svg', 'circleci']
