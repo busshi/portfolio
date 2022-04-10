@@ -21,10 +21,10 @@ Passionné par la domotique, j'ai voulu créer une application pour centraliser 
 ## Fonctionnalités
 
 + Télécommandes TV :
-![tgbot_remote](../assets/projects/tgbot/tgbot_remote.png)
+![tgbot_remote](/assets/projects/tgbot/tgbot_remote.png)
 
 + Solveur de sudokus :
-![tgbot_sudoku](../assets/projects/tgbot/tgbot_sudoku.png)
+![tgbot_sudoku](/assets/projects/tgbot/tgbot_sudoku.png)
 
 + Connaître ses dépenses énergétiques en temps réel
 + Controler mes appareils domotiques (lumière, chauffage, fenêtres, portes...)

@@ -21,9 +21,9 @@ Passionated about home automation, I wanted to created an app to centralize all 
 ## Features
 
 + Creating TV remotes:
-![tgbot_remote](assets/projects/tgbot/tgbot_remote.png)
+![tgbot_remote](/assets/projects/tgbot/tgbot_remote.png)
 + Solving sudokus :
-![tgbot_sudoku](assets/projects/tgbot/tgbot_sudoku.png)
+![tgbot_sudoku](/assets/projects/tgbot/tgbot_sudoku.png)
 + Getting electricity billing in real time
 + Controlling my devices for my home automation (lights, heating devices, windows, doors...)
 + Send messages to Alexa for broadcasting to devices connected

@@ -11,11 +11,13 @@ cd portfolio
 yarn install
 yarn run dev
 ```
+Then view it in the browser at http://localhost:3000
 
-On every push to master branch, the project is build and pushed to [Dockerhub](https://hub.docker.com/repository/docker/busshi) using CircleCI. It is also deployed online.
+On every push to master branch, the project is build and pushed to [Dockerhub](https://hub.docker.com/r/busshi/portfolio) using CircleCI. It is also deployed online from the cloud.
 
 ```bash
-docker pull busshi/portfolio:latest
-```
+docker pull busshi/portfolio:latest``` to pull the latest image from dockerhub
+```bash
+docker run -p 80:3000``` to run the container. Then browse to http://localhost
 
 ## Have a look [here](https://busshi.fr)
