@@ -11,8 +11,6 @@ import Footer from '../components/Footer'
 import { useContext, useEffect, useState } from 'react'
 import langageContext, { LangageContextType } from '../context/langage/langageContext'
 import githubContext, { GithubContextType } from '../context/github/githubContext'
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
 
 type Props = {
   allPosts: Post[]
