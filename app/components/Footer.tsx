@@ -30,7 +30,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="pt-10 lg:pt-0 basis-0 lg:basis-1/3 flex flex-col lg:flex-row lg:flex-wrap justify-center items-center">
+          <div className="pb-4 pt-10 lg:pt-0 basis-0 lg:basis-1/3 flex flex-col lg:flex-row lg:flex-wrap justify-center items-center">
             <Link href={`mailto:${EMAIL}`}>
               <a>
                 <button className="pushable">
@@ -40,11 +40,11 @@ const Footer = () => {
                 </button>
               </a>
             </Link>
-            <Link href={SITE_PRO}>
+            {/*<Link href={SITE_PRO}> /////////  => et supprimer le pb-4 du div en dessus
               <a className="m-3 font-bold hover:underline">
                 {FOOTER[langId].company}
               </a>
-            </Link>
+              </Link>*/}
 
           </div>
         </div>

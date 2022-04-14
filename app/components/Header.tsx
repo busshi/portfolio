@@ -9,7 +9,7 @@ const Header = () => {
   const { langId } = useContext(langageContext) as LangageContextType;
 
   return (
-    <div className="flex justify-between content-center mb-10">
+    <div className="flex justify-between content-center mb-10 pt-8 md:pt-3">
       <div className="content-center">
         <h2 className="my-6 text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight">
           <Link href="/" >

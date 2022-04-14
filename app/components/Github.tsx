@@ -22,7 +22,7 @@ import Link from 'next/link'
           else
             setLastY(data.y);
     }}
-    disabled={!useMediaQuery({ query: "(min-width: 800px)"})}
+    disabled={useMediaQuery({ query: "(max-width: 800px)"})}
   >
     <div className="fixed bottom-0 right-0 z-50 m-3 md:m-5 p-2 bg-black hover:bg-neutral-200 text-neutral-200 hover:text-black border-neutral-200 hover:border-black duration-1000 transition-colors border-2 rounded-full">
           <div className="text-center text-sm">
