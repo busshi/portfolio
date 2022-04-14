@@ -4,7 +4,7 @@
 
 Web single page application coded in Typescript using NextJS framework. This app is my portfolio and I explain here some of my personal projects.
 
-### Usage
+## Usage
 ```bash
 git clone https://github.com/busshi/portfolio.git
 cd portfolio
@@ -15,9 +15,16 @@ Then view it in the browser at http://localhost:3000
 
 On every push to master branch, the project is build and pushed to [Dockerhub](https://hub.docker.com/r/busshi/portfolio) using CircleCI. It is also deployed online from the cloud.
 
+## Dockerhub alternative
+1. Pull the latest image from dockerhub:
 ```bash
-docker pull busshi/portfolio:latest``` to pull the latest image from dockerhub
-```bash
-docker run -p 80:3000``` to run the container. Then browse to http://localhost
+docker pull busshi/portfolio:latest
+```
 
+2. Run the container:
+```bash
+docker run -p 80:3000
+```
+3. Browse to http://localhost
+ 
 ## Have a look [here](https://busshi.fr)
