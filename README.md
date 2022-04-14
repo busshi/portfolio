@@ -17,14 +17,11 @@ On every push to master branch, the project is build and pushed to [Dockerhub](h
 
 ## Dockerhub alternative
 1. Pull the latest image from dockerhub:
-```bash
-docker pull busshi/portfolio:latest
-```
+```docker pull busshi/portfolio:latest```
 
 2. Run the container:
-```bash
-docker run -p 80:3000
-```
+```docker run -p 80:3000```
+
 3. Browse to http://localhost
  
 ## Have a look [here](https://busshi.fr)
