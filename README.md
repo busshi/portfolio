@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/busshi/portfolio/tree/master.svg?style=shield&circle-token=77dd5998d2e80fb6e3474566cdc7f8206db67efd)](https://circleci.com/gh/busshi/portfolio/tree/master)
+![build](https://github.com/busshi/portfolio/actions/workflows/build.yml/badge.svg)
 
 # MY PORTFOLIO
 
@@ -13,7 +13,7 @@ yarn run dev
 ```
 Then view it in the browser at http://localhost:3000
 
-On every push to master branch, the project is build and pushed to [Dockerhub](https://hub.docker.com/r/busshi/portfolio) using CircleCI. It is also deployed online from the cloud.
+On every push to master branch, the project is build and pushed to [Dockerhub](https://hub.docker.com/r/busshi/portfolio). It is also deployed online from the cloud.
 
 ## Dockerhub alternative
 1. Pull the latest image from dockerhub:
