@@ -59,7 +59,7 @@ const Post = ({ post }: Props) => {
     setProjectUrl(post.projectUrl);
     getJsonldContent();
   }, []);
-  console.log("JSONLD===>", jsonld);
+  //console.log("JSONLD===>", jsonld);
   return (
     <Layout>
       <Container>
@@ -77,7 +77,19 @@ const Post = ({ post }: Props) => {
                 <script
                   type="application/ld+json"
                   dangerouslySetInnerHTML={{
-                    __html: `${jsonld}`,
+                    __html: `{
+                      "@context": "https://schema.org",
+                      "@type": "NewsArticle",
+                      "headline": "Article headline",
+                      "image": ["https://busshi.fr/assets/projects/pentest/ejpt.png","https://busshi.fr/assets/projects/pentest/ejpt.png"],
+                      "datePublished": "2015-02-05T08:00:00+08:00",
+                      "dateModified": "2015-02-05T09:20:00+08:00",
+                      "author": [{
+                        "@type": "Person",
+                        "name": "busshi",
+                        "url": "https://busshi.fr"
+                      }]
+                    }`,
                   }}
                 />
               </Head>
