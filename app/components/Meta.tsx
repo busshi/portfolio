@@ -123,39 +123,39 @@ const Meta = () => {
             "@type": "ItemList",
             "itemListElement": [
               {
-                "@type": "ListItem",
-                "position": "1",
-                "item": {
-                  "@type": "ft_transcendance",
-                  "url": "${SITE_URL}/posts/ft_transcendance_EN",
-                  "name": "ft_transcendance",
-                  "image": "${SITE_URL}/assets/projects/transcendance/cover.png",
-                  "dateCreated": "2022-03-28",
-                  "director": {
-                    "@type": "Person",
-                    "name": "busshi"
-                  },
-                  "review": {
-                    "@type": "Review",
-                    "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5"
-                  },
-                  "author": {
-                    "@type": "Person",
-                    "name": "busshi"
-                  },
-                  "reviewBody": "Last project @42 #born2code"
+              "@type": "ListItem",
+              "position": "1",
+              "item": {
+                "@type": "Movie",
+                "name": "ft_transcendance",
+                "url": "${SITE_URL}/posts/ft_transcendance_EN",
+                "image": "${SITE_URL}/assets/projects/transcendance/cover.png",
+                "dateCreated": "2022-03-28",
+                "director": {
+                  "@type": "Person",
+                  "name": "busshi"
                 },
+                "review": {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "busshi"
+                },
+                "reviewBody": "Last project @42 #born2code"
+              },
               "aggregateRating":
-                {
-                  "@type": "AggregateRating",
-                  "ratingValue": "99",
-                  "bestRating": "100",
-                  "ratingCount": "19141"
-                }
+              {
+                "@type": "AggregateRating",
+                "ratingValue": "99",
+                "bestRating": "100",
+                "ratingCount": "83644"
               }
-            },
+            }
+          },
             {
               "@type": "ListItem",
               "position": "2",
