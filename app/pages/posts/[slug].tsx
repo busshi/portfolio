@@ -82,8 +82,8 @@ const Post = ({ post }: Props) => {
                       "@type": "NewsArticle",
                       "headline": "Article headline",
                       "image": ["https://busshi.fr/assets/projects/pentest/ejpt.png","https://busshi.fr/assets/projects/pentest/ejpt.png"],
-                      "datePublished": "2015-02-05T08:00:00+08:00",
-                      "dateModified": "2015-02-05T09:20:00+08:00",
+                      "datePublished": "${post.date}",
+                      "dateModified": "${post.date}",
                       "author": [{
                         "@type": "Person",
                         "name": "${post.author}",
