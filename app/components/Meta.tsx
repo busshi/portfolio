@@ -82,7 +82,7 @@ const Meta = () => {
       />
       <meta name="theme-color" content="#ffffff" />
       <meta name="description" content={SITE_TITLE[0].content} />
-      <Script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: `{
