@@ -86,7 +86,7 @@ const Post = ({ post }: Props) => {
                       "dateModified": "2015-02-05T09:20:00+08:00",
                       "author": [{
                         "@type": "Person",
-                        "name": "busshi",
+                        "name": "${post.author}",
                         "url": "https://busshi.fr"
                       }]
                     }`,
