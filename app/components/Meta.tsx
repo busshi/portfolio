@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Script from "next/script";
 import { SITE_TITLE } from "../lib/constants";
 
 const Meta = () => {
@@ -86,11 +85,11 @@ const Meta = () => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: `{
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "url": "https://busshi.fr",
-      "logo": "https://busshi.fr/images/logo.svg"
-    }`,
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "url": "https://busshi.fr",
+              "logo": "https://busshi.fr/images/logo.svg"
+          }`,
         }}
       />
 
