@@ -1,5 +1,5 @@
 export const EMAIL = "contact@busshi.fr";
-export const SITE = "https://busshi.fr";
+export const SITE_URL = "https://busshi.fr";
 export const SITE_PRO = "https://busshidev.fr";
 export const AVATAR_URL = "/assets/authors/busshi.jpeg";
 export const SITE_TITLE = [

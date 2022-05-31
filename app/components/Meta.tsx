@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { SITE_TITLE } from "../lib/constants";
+import { SITE_URL, SITE_PRO, SITE_TITLE } from "../lib/constants";
 
 const Meta = () => {
   return (
@@ -87,16 +87,11 @@ const Meta = () => {
           __html: `{
               "@context": "https://schema.org",
               "@type": "Organization",
-              "url": "https://busshi.fr",
-              "logo": "https://busshi.fr/images/logo.svg"
+              "url": "${SITE_PRO}",
+              "logo": "${SITE_URL}/images/logo.svg"
           }`,
         }}
       />
-
-      {/*<link rel="preconnect" href="https://fonts.googleapis.com" /> 
-      <link rel="preconnect" href="https://fonts.gstatic.com" /> 
-      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
-       <meta property="og:image" content={HOME_OG_IMAGE_URL} />*/}
     </Head>
   );
 };

@@ -7,7 +7,7 @@ import PostHeader from "../../components/PostHeader";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/PostTitle";
 import Head from "next/head";
-import { SITE_TITLE, SITE } from "../../lib/constants";
+import { SITE_TITLE, SITE_URL } from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 import PostType from "../../types/post";
 import { MdArrowBackIosNew } from "react-icons/md";
@@ -62,13 +62,13 @@ const Post = ({ post }: Props) => {
                       "@context": "https://schema.org",
                       "@type": "NewsArticle",
                       "headline": "Article headline",
-                      "image": ["${SITE}/assets/projects${post.thumb[0]}","${SITE}/assets/projects${post.thumb[1]}"],
+                      "image": ["${SITE_URL}/assets/projects${post.thumb[0]}","${SITE_URL}/assets/projects${post.thumb[1]}"],
                       "datePublished": "${post.date}",
                       "dateModified": "${post.date}",
                       "author": [{
                         "@type": "Person",
                         "name": "${post.author.name}",
-                        "url": "${SITE}"
+                        "url": "${SITE_URL}"
                       }]
                     }`,
                   }}
