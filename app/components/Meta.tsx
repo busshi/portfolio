@@ -81,6 +81,7 @@ const Meta = () => {
       />
       <meta name="theme-color" content="#ffffff" />
       <meta name="description" content={SITE_TITLE[0].content} />
+      {/* Logo */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -92,6 +93,7 @@ const Meta = () => {
           }`,
         }}
       />
+      {/* Fil d'ariane */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -110,6 +112,150 @@ const Meta = () => {
               "item": "${SITE_URL}/posts/ft_transcendance_EN"
             }]
           }`,
+        }}
+      />
+      {/* Carousel with movies style */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": "1",
+                "item": {
+                  "@type": "ft_transcendance",
+                  "url": "${SITE_URL}/posts/ft_transcendance_EN",
+                  "name": "ft_transcendance",
+                  "image": "${SITE_URL}/assets/projects/transcendance/cover.png",
+                  "dateCreated": "2022-03-28",
+                  "director": {
+                    "@type": "Person",
+                    "name": "busshi"
+                  },
+                  "review": {
+                    "@type": "Review",
+                    "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                  },
+                  "author": {
+                    "@type": "Person",
+                    "name": "busshi"
+                  },
+                  "reviewBody": "Last project @42 #born2code"
+                },
+              "aggregateRating":
+                {
+                  "@type": "AggregateRating",
+                  "ratingValue": "99",
+                  "bestRating": "100",
+                  "ratingCount": "19141"
+                }
+              }
+            },
+            {
+              "@type": "ListItem",
+              "position": "2",
+              "item": {
+                "@type": "Movie",
+                "name": "YT2mp3",
+                "url": "${SITE_URL}/posts/yt2mp3_EN",
+                "image": "${SITE_URL}/assets/projects/yt2mp3/cover.png",
+                "dateCreated": "2022-01-11",
+                "director": {
+                  "@type": "Person",
+                  "name": "busshi"
+                },
+                "review": {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "4"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "busshi"
+                },
+                "reviewBody": "My first app in React"
+              },
+              "aggregateRating":
+              {
+                "@type": "AggregateRating",
+                "ratingValue": "81",
+                "bestRating": "100",
+                "ratingCount": "21985"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": "3",
+            "item": {
+              "@type": "Movie",
+              "name": "cub3D",
+              "url": "${SITE_URL}/posts/cub3d_EN",
+              "image": "${SITE_URL}/assets/projects/cub3d/cub3d_cover.png",
+              "dateCreated": "2021-03-06",
+              "director": {
+                "@type": "Person",
+                "name": "busshi"
+              },
+              "review": {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "busshi"
+              },
+              "reviewBody": "Remaking Wolfenstein 3D: My first raycaster"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "96",
+                "bestRating": "100",
+                "ratingCount": "88211"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": "4",
+            "item": {
+              "@type": "Movie",
+              "name": "Telegram Bot",
+              "url": "${SITE_URL}/posts/tgbot_EN",
+              "image": "${SITE_URL}/assets/projects/tgbot/cover.png",
+              "dateCreated": "2019-06-21",
+              "director": {
+                "@type": "Person",
+                "name": "busshi"
+              },
+              "review": {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "4"
+              },
+              "author": {
+                "@type": "Person",
+                "name": "busshi"
+              },
+              "reviewBody": "My own Telegram bot coded in Python"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "85",
+                "bestRating": "100",
+                "ratingCount": "9374"
+              }
+            }
+          }]}`,
         }}
       />
     </Head>
