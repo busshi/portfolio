@@ -13,7 +13,7 @@ import PostType from "../../types/post";
 import { MdArrowBackIosNew } from "react-icons/md";
 import Link from "next/link";
 import Footer from "../../components/Footer";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 import langageContext, {
   LangageContextType,
 } from "../../context/langage/langageContext";
@@ -36,30 +36,11 @@ const Post = ({ post }: Props) => {
 
   const { setProjectUrl } = useContext(githubContext) as GithubContextType;
   const { langId } = useContext(langageContext) as LangageContextType;
-  const [jsonld, setJsonld] = useState<{}>();
-
-  const getJsonldContent = () => {
-    const jsonld = `{
-                      "@context": "https://schema.org",
-                      "@type": "NewsArticle",
-                      "headline": "Article headline",
-                      "image": ["https://busshi.fr/assets/projects${post.thumb[0]}","https://busshi.fr/assets/projects${post.thumb[1]}"],
-                      "datePublished": "${post.date}",
-                      "dateModified": "${post.date}",
-                      "author": [{
-                        "@type": "Person",
-                        "name": "${post.author}",
-                        "url": "https://busshi.fr"
-                      }],
-                    }`;
-    setJsonld(jsonld);
-  };
 
   useEffect(() => {
     setProjectUrl(post.projectUrl);
-    getJsonldContent();
   }, []);
-  //console.log("JSONLD===>", jsonld);
+
   return (
     <Layout>
       <Container>
@@ -81,12 +62,12 @@ const Post = ({ post }: Props) => {
                       "@context": "https://schema.org",
                       "@type": "NewsArticle",
                       "headline": "Article headline",
-                      "image": ["https://busshi.fr/assets/projects/pentest/ejpt.png","https://busshi.fr/assets/projects/pentest/ejpt.png"],
+                      "image": ["${post.thumb[0]}","${post.thumb[1]}"],
                       "datePublished": "${post.date}",
                       "dateModified": "${post.date}",
                       "author": [{
                         "@type": "Person",
-                        "name": "${post.author}",
+                        "name": "${post.author.name}",
                         "url": "https://busshi.fr"
                       }]
                     }`,
