@@ -62,7 +62,7 @@ const Post = ({ post }: Props) => {
                       "@context": "https://schema.org",
                       "@type": "NewsArticle",
                       "headline": "Article headline",
-                      "image": ${post.thumb},
+                      "image": [${post.thumb[0]},${post.thumb[1]}],
                       "datePublished": ${post.date},
                       "dateModified": ${post.date},
                       "author": [{
