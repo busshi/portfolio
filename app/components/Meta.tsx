@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { SITE_URL, SITE_PRO, SITE_TITLE } from "../lib/constants";
+import { SITE_URL, SITE_TITLE } from "../lib/constants";
 
 const Meta = () => {
   return (
@@ -88,8 +88,8 @@ const Meta = () => {
           __html: `{
               "@context": "https://schema.org",
               "@type": "Organization",
-              "url": "${SITE_PRO}",
-              "logo": "${SITE_URL}/images/logo.svg"
+              "url": "${SITE_URL}",
+              "logo": "${SITE_URL}/images/logo.png"
           }`,
         }}
       />
