@@ -25,7 +25,7 @@ export const jsonldFaq = (langId: number) => {
         name: `${FOOTER[langId].slogan}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<a href="${LINKS[0].url}">${LINKS[0].name}</a><br/><a href="${LINKS[1].url}">${LINKS[1].name}</a><br/><a href="${LINKS[2].url}">${LINKS[2].name}</a><br/><a href="${LINKS[3].url}">${LINKS[3].name}</a><br/><a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a>`,
+          text: `<a href="${LINKS[0].url}">${LINKS[0].name} <a href="${LINKS[1].url}">${LINKS[1].name}</a> <a href="${LINKS[2].url}">${LINKS[2].name}</a> <a href="${LINKS[3].url}">${LINKS[3].name}</a> <a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a>`,
         },
       },
       {
