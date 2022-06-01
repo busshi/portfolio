@@ -20,13 +20,13 @@ export const STORIES_TITLE = [
 export const FOOTER = [
   {
     lang: "EN",
-    slogan: "Powered by busshi",
+    slogan: "Powered by busshiDev",
     contact: "Contact me",
     company: "Check my company here",
   },
   {
     lang: "FR",
-    slogan: "Développé par busshi",
+    slogan: "Développé par busshiDev",
     contact: "Me contacter",
     company: "Site pro",
   },

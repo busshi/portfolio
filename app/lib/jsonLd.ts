@@ -5,7 +5,6 @@ import {
   LINKS,
   SITE_PRO,
   SITE_PRO_TITLE,
-  SITE_TITLE,
   SITE_URL,
 } from "./constants";
 
@@ -23,10 +22,18 @@ export const jsonldFaq = (langId: number) => {
     mainEntity: [
       {
         "@type": "Question",
+        name: "Who am I?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${BUSSHI_BIO[langId].content}`,
+        },
+      },
+      {
+        "@type": "Question",
         name: `${FOOTER[langId].slogan}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<ul style="list-style-type: none"><li style="display: inline"><a href="${LINKS[0].url}">${LINKS[0].name}</li><li style="display: inline"><a href="${LINKS[1].url}">${LINKS[1].name}</a></li><li style="display: inline"><a href="${LINKS[2].url}">${LINKS[2].name}</a></li><li style="display: inline"><a href="${LINKS[3].url}">${LINKS[3].name}</a></li><li style="display: inline"><a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a></li></ul>`,
+          text: `<ul><li><a href="${LINKS[0].url}">${LINKS[0].name}</li><li><a href="${LINKS[1].url}">${LINKS[1].name}</a></li><li><a href="${LINKS[2].url}">${LINKS[2].name}</a></li><li><a href="${LINKS[3].url}">${LINKS[3].name}</a></li><li><a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a></li></ul>`,
         },
       },
       {
@@ -34,15 +41,7 @@ export const jsonldFaq = (langId: number) => {
         name: `${FOOTER[langId].company}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<div><a href="${SITE_PRO}">${SITE_PRO_TITLE}</a><img src="${SITE_TITLE}/images/logo.png" width="100%" height="100%"/></div>`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: "Who am I?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${BUSSHI_BIO[langId].content}`,
+          text: `<a href="${SITE_PRO}">${SITE_PRO_TITLE}</a>`,
         },
       },
     ],
@@ -62,20 +61,8 @@ export const jsonldAriane = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Last project in Typescript",
+      name: "Last project",
       item: `${SITE_URL}/posts/ft_transcendance_EN`,
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "My first React app",
-      item: `${SITE_URL}/posts/yt2mp3_EN`,
-    },
-    {
-      "@type": "ListItem",
-      position: 4,
-      name: "Becoming a junior pentester",
-      item: `${SITE_URL}/posts/pentest_EN`,
     },
   ],
 };
