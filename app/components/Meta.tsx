@@ -99,7 +99,9 @@ const Meta = () => {
           }`,
         }}
       />
+
       {/* Website */}
+
       {/*<script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -152,7 +154,9 @@ const Meta = () => {
           }`,
         }}
       />*/}
+
       {/* Fil d'ariane */}
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -183,7 +187,9 @@ const Meta = () => {
           }`,
         }}
       />
+
       {/* Carousel with movies style */}
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -327,7 +333,9 @@ const Meta = () => {
           }]}`,
         }}
       />
+
       {/* FAQ */}
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -338,36 +346,36 @@ const Meta = () => {
               "@type": "Question",
               "name": "Who am I?",
               "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "${BUSSHI_BIO[langId].content}"
+                "@type": "Answer",
+                "text": "${BUSSHI_BIO[langId].content}"
               }
             },{
               "@type": "Question",
               "name": "${LINKS[0].name}",
               "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "${LINKS[0].url}"
+                "@type": "Answer",
+                "text": "<a href=\"${LINKS[0].url}\">${LINKS[0].name}</a>"
               }
             },{
               "@type": "Question",
               "name": "${LINKS[1].name}",
               "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "${LINKS[1].url}"
+                "@type": "Answer",
+                "text": "<a href=\"${LINKS[1].url}\">${LINKS[1].name}</a>"
               }
             },{
               "@type": "Question",
               "name": "${LINKS[2].name}",
               "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "${LINKS[2].url}"
+                "@type": "Answer",
+                "text": "<a href=\"${LINKS[2].url}\">${LINKS[2].name}</a>"
               }
             },{
               "@type": "Question",
               "name": "${LINKS[3].name}",
               "acceptedAnswer": {
               "@type": "Answer",
-              "text":"${LINKS[3].name}"}
+              "text":"<a href=\"${LINKS[3].url}\">${LINKS[3].name}</a>"}
             }]
           }`,
         }}
