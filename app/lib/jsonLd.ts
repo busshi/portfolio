@@ -1,4 +1,11 @@
-import { BUSSHI_BIO, LINKS, SITE_URL } from "./constants";
+import {
+  BUSSHI_BIO,
+  EMAIL,
+  FOOTER,
+  LINKS,
+  SITE_PRO,
+  SITE_URL,
+} from "./constants";
 
 export const jsonldLogo = {
   "@context": "https://schema.org",
@@ -22,34 +29,26 @@ export const jsonldFaq = (langId: number) => {
       },
       {
         "@type": "Question",
-        name: `${LINKS[0].name}`,
+        name: `${FOOTER[langId].slogan}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<a href="${LINKS[0].url}">${LINKS[0].name}</a>`,
+          text: `<a href="${LINKS[0].url}">${LINKS[0].name}</a><br/><a href="${LINKS[1].url}">${LINKS[1].name}</a><br/><a href="${LINKS[2].url}">${LINKS[2].name}</a><br/><a href="${LINKS[3].url}">${LINKS[3].name}</a>`,
         },
       },
       {
         "@type": "Question",
-        name: `${LINKS[1].name}`,
+        name: `${FOOTER[langId].company}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<a href="${LINKS[1].url}">${LINKS[1].name}</a>`,
+          text: `<a href="${SITE_PRO}">${FOOTER[langId].company}</a>`,
         },
       },
       {
         "@type": "Question",
-        name: `${LINKS[2].name}`,
+        name: `${FOOTER[langId].contact}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<a href="${LINKS[2].url}">${LINKS[2].name}</a>`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: `${LINKS[3].name}`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `<a href="${LINKS[3].url}">${LINKS[3].name}</a>`,
+          text: `<a href="${EMAIL}">${FOOTER[langId].contact}</a>`,
         },
       },
     ],
