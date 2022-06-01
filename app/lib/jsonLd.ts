@@ -4,6 +4,7 @@ import {
   FOOTER,
   LINKS,
   SITE_PRO,
+  SITE_PRO_TITLE,
   SITE_URL,
 } from "./constants";
 
@@ -24,7 +25,7 @@ export const jsonldFaq = (langId: number) => {
         name: `${FOOTER[langId].slogan}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<a href="${LINKS[0].url}">${LINKS[0].name}</a><br/><a href="${LINKS[1].url}"><img src="${SITE_URL}${LINKS[1].src}"/>${LINKS[1].name}</a><br/><a href="${LINKS[2].url}">${LINKS[2].name}</a><br/><a href="${LINKS[3].url}">${LINKS[3].name}</a>`,
+          text: `<a href="${LINKS[0].url}">${LINKS[0].name}</a><br/><a href="${LINKS[1].url}">${LINKS[1].name}</a><br/><a href="${LINKS[2].url}">${LINKS[2].name}</a><br/><a href="${LINKS[3].url}">${LINKS[3].name}</a><br/><a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a>`,
         },
       },
       {
@@ -32,15 +33,7 @@ export const jsonldFaq = (langId: number) => {
         name: `${FOOTER[langId].company}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<a href="${SITE_PRO}">${FOOTER[langId].company}</a>`,
-        },
-      },
-      {
-        "@type": "Question",
-        name: `${FOOTER[langId].contact}`,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `<a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a>`,
+          text: `<a href="${SITE_PRO}">${SITE_PRO_TITLE}</a>`,
         },
       },
       {
