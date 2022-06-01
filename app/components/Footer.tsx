@@ -38,7 +38,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="pb-4 pt-10 lg:pt-0 basis-0 lg:basis-1/3 flex flex-col lg:flex-row lg:flex-wrap justify-center items-center">
+        <div className="pb-4 pt-20 lg:pt-8 basis-0 lg:basis-1/3 flex flex-col lg:flex-wrap justify-center items-center">
           <Link href={`mailto:${EMAIL}`}>
             <a>
               <button className="pushable">

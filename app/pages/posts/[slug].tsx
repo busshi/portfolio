@@ -7,7 +7,12 @@ import PostHeader from "../../components/PostHeader";
 import { getPostBySlug, getAllPosts } from "../../lib/api";
 import PostTitle from "../../components/PostTitle";
 import Head from "next/head";
-import { SITE_TITLE, SITE_URL } from "../../lib/constants";
+import {
+  SITE_PRO,
+  SITE_PRO_TITLE,
+  SITE_TITLE,
+  SITE_URL,
+} from "../../lib/constants";
 import markdownToHtml from "../../lib/markdownToHtml";
 import PostType from "../../types/post";
 import { MdArrowBackIosNew } from "react-icons/md";
@@ -69,6 +74,21 @@ const Post = ({ post }: Props) => {
                         "@type": "Person",
                         "name": "${post.author.name}",
                         "url": "${SITE_URL}"
+                      }],
+                      "publisher": [{
+                        "@type": "Organization",
+                        "name": "${SITE_PRO_TITLE}",
+                        logo: {
+                          "@type": "ImageObject",
+                          url: "${SITE_URL}/images/logo.svg',
+                        }
+                      },{
+                        "@type": "Organization",
+                        "name": "${post.author.name}",
+                        logo: {
+                          "@type": "ImageObject",
+                          url: "${SITE_URL}/images/logo.png',
+                        }
                       }]
                     }`,
                   }}

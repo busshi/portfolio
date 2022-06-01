@@ -3,6 +3,7 @@ import {
   EMAIL,
   FOOTER,
   LINKS,
+  PLAY_URL,
   SITE_PRO,
   SITE_PRO_TITLE,
   SITE_URL,
@@ -63,6 +64,12 @@ export const jsonldAriane = {
       position: 2,
       name: "Last project",
       item: `${SITE_URL}/posts/ft_transcendance_EN`,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Play online",
+      item: `${PLAY_URL}`,
     },
   ],
 };
