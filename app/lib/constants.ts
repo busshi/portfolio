@@ -82,3 +82,59 @@ export const LINKS = [
     url: "https://hub.docker.com/repository/docker/busshi/portfolio",
   },
 ];
+
+export const jsonldLogo = JSON.stringify(`{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  url: "${SITE_URL}",
+  logo: "${SITE_URL}/images/logo.png",
+}`);
+
+export const jsonldFaq = (langId: number) => {
+  return JSON.stringify(`{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Who am I?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "${BUSSHI_BIO[langId].content}",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "${LINKS[0].name}",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: '<a href="${LINKS[0].url}">${LINKS[0].name}</a>',
+        },
+      },
+      {
+        "@type": "Question",
+        name: "${LINKS[1].name}",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: '<a href="${LINKS[1].url}">${LINKS[1].name}</a>',
+        },
+      },
+      {
+        "@type": "Question",
+        name: "${LINKS[2].name}",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: '<a href="${LINKS[2].url}">${LINKS[2].name}</a>',
+        },
+      },
+      {
+        "@type": "Question",
+        name: "${LINKS[3].name}",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: '<a href="${LINKS[3].url}">${LINKS[3].name}</a>',
+        },
+      },
+    ],
+  }`);
+};
