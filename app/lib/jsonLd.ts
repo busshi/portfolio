@@ -26,7 +26,7 @@ export const jsonldFaq = (langId: number) => {
         name: `${FOOTER[langId].slogan}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<ul><li><a href="${LINKS[0].url}">${LINKS[0].name}</li><li><a href="${LINKS[1].url}">${LINKS[1].name}</a></li><li><a href="${LINKS[2].url}">${LINKS[2].name}</a></li><li><a href="${LINKS[3].url}">${LINKS[3].name}</a></li><li><a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a></li></ul>`,
+          text: `<ul style="list-style-type: none"><li style="display: inline"><a href="${LINKS[0].url}">${LINKS[0].name}</li><li style="display: inline"><a href="${LINKS[1].url}">${LINKS[1].name}</a></li><li style="display: inline"><a href="${LINKS[2].url}">${LINKS[2].name}</a></li><li style="display: inline"><a href="${LINKS[3].url}">${LINKS[3].name}</a></li><li style="display: inline"><a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a></li></ul>`,
         },
       },
       {
@@ -34,7 +34,7 @@ export const jsonldFaq = (langId: number) => {
         name: `${FOOTER[langId].company}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<div><a href="${SITE_PRO}">${SITE_PRO_TITLE}</a><img src="${SITE_TITLE}/images/logo.svg" width={20} height={20}/></div>`,
+          text: `<div><a href="${SITE_PRO}">${SITE_PRO_TITLE}</a><img src="${SITE_TITLE}/images/logo.png" width="100%" height="100%"/></div>`,
         },
       },
       {
@@ -91,7 +91,7 @@ export const jsonldCarousel = {
         "@type": "Movie",
         name: "ft_transcendance",
         url: `${SITE_URL}/posts/ft_transcendance_EN`,
-        image: `${SITE_URL}/assets/projects/transcendance/cover.png`,
+        image: `${SITE_URL}/assets/projects/transcendance/transcendance_architecture.png`,
         dateCreated: "2022-03-28",
         director: {
           "@type": "Person",
