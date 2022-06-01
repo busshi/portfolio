@@ -65,20 +65,24 @@ export const LINKS = [
     id: 1,
     name: "Linkedin",
     url: "https://www.linkedin.com/in/alexandre-dubar/",
+    src: "",
   },
   {
     id: 2,
     name: "Malt",
     url: "https://www.malt.fr/profile/alexandredubar",
+    src: `/icons/malt.png`,
   },
   {
     id: 3,
     name: "Github",
     url: "https://github.com/busshi",
+    src: "",
   },
   {
     id: 4,
     name: "DockerHub",
     url: "https://hub.docker.com/repository/docker/busshi/portfolio",
+    src: "",
   },
 ];

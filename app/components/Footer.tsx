@@ -26,7 +26,7 @@ const Footer = () => {
                       <FaLinkedin className="text-blue-700" />
                     )}
                     {link.name === "Malt" && (
-                      <img src="/icons/malt.png" width={25} height={25} />
+                      <img src={link.src} width={25} height={25} />
                     )}
                     {link.name === "Github" && <VscGithub />}
                     {link.name === "DockerHub" && (
