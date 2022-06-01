@@ -21,14 +21,6 @@ export const jsonldFaq = (langId: number) => {
     mainEntity: [
       {
         "@type": "Question",
-        name: "Who am I?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: `${BUSSHI_BIO[langId].content}`,
-        },
-      },
-      {
-        "@type": "Question",
         name: `${FOOTER[langId].slogan}`,
         acceptedAnswer: {
           "@type": "Answer",
@@ -49,6 +41,14 @@ export const jsonldFaq = (langId: number) => {
         acceptedAnswer: {
           "@type": "Answer",
           text: `<a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a>`,
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Who am I?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: `${BUSSHI_BIO[langId].content}`,
         },
       },
     ],

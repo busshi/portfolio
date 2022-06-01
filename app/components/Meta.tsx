@@ -103,20 +103,20 @@ const Meta = () => {
       />
 
       {/* Fil d'ariane */}
-      {/*<script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonldAriane),
         }}
-      />*/}
+      />
 
       {/* Carousel with movies style */}
-      {/*<script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonldCarousel),
         }}
-      />*/}
+      />
 
       {/* FAQ */}
       <script
