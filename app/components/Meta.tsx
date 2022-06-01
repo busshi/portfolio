@@ -3,7 +3,7 @@ import { useContext } from "react";
 import langageContext, {
   LangageContextType,
 } from "../context/langage/langageContext";
-import { SITE_URL, SITE_TITLE } from "../lib/constants";
+import { SITE_URL, SITE_TITLE, BUSSHI_BIO, LINKS } from "../lib/constants";
 
 const Meta = () => {
   const { langId } = useContext(langageContext) as LangageContextType;
@@ -100,7 +100,7 @@ const Meta = () => {
         }}
       />
       {/* Website */}
-      <script
+      {/*<script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: `{
@@ -151,7 +151,7 @@ const Meta = () => {
             }
           }`,
         }}
-      />
+      />*/}
       {/* Fil d'ariane */}
       <script
         type="application/ld+json"
@@ -327,6 +327,51 @@ const Meta = () => {
           }]}`,
         }}
       />
+      {/* FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "Who am I?",
+              "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "${BUSSHI_BIO[langId].content}"
+              }
+            },{
+              "@type": "Question",
+              "name": "${LINKS[0].name}",
+              "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "${LINKS[0].url}"
+              }
+            },{
+              "@type": "Question",
+              "name": "${LINKS[1].name}",
+              "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "${LINKS[1].url}"
+              }
+            },{
+              "@type": "Question",
+              "name": "${LINKS[2].name}",
+              "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "${LINKS[2].url}"
+              }
+            },{
+              "@type": "Question",
+              "name": "${LINKS[3].name}",
+              "acceptedAnswer": {
+              "@type": "Answer",
+              "text":"${LINKS[3].name}"}
+            }]
+          }`,
+        }}
+      ></script>
     </Head>
   );
 };
