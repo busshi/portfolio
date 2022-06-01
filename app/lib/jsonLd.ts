@@ -48,7 +48,7 @@ export const jsonldFaq = (langId: number) => {
         name: `${FOOTER[langId].contact}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<a href="${EMAIL}">${FOOTER[langId].contact}</a>`,
+          text: `<a href="mailto:${EMAIL}">${FOOTER[langId].contact}</a>`,
         },
       },
     ],
