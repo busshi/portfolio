@@ -1,7 +1,13 @@
 import Head from "next/head";
+import { useContext } from "react";
+import langageContext, {
+  LangageContextType,
+} from "../context/langage/langageContext";
 import { SITE_URL, SITE_TITLE } from "../lib/constants";
 
 const Meta = () => {
+  const { langId } = useContext(langageContext) as LangageContextType;
+
   return (
     <Head>
       <link
@@ -80,7 +86,7 @@ const Meta = () => {
         content="/favicon/ms-icon-144x144.png"
       />
       <meta name="theme-color" content="#ffffff" />
-      <meta name="description" content={SITE_TITLE[0].content} />
+      <meta name="description" content={SITE_TITLE[langId].content} />
       {/* Logo */}
       <script
         type="application/ld+json"
@@ -90,6 +96,59 @@ const Meta = () => {
               "@type": "Organization",
               "url": "${SITE_URL}",
               "logo": "${SITE_URL}/images/logo.png"
+          }`,
+        }}
+      />
+      {/* Website */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: `{
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              "id": "${SITE_URL}",
+              "name":"${SITE_TITLE[langId].content}",
+              "breadcrumb":{
+                "@type":"BreadcrumbList",
+                "itemListElement":[
+                {
+                  "@type":"ListItem",
+                  "position":"1",
+                  "item":{
+                    "@type":"WebSite",
+                  "@id":"${SITE_URL}",
+                  "name":"${SITE_TITLE[langId].content}"
+                  }
+                },
+                {
+                  "@type":"ListItem",
+                  "position":"2",
+                  "item":{
+                    "@type":"WebPage",
+                    "@id":"${SITE_URL}/posts/ft_transcendance_EN"",
+                    "name":"Last project"
+                  }
+                },
+                {
+                  "@type":"ListItem",
+                  "position":"3",
+                  "item":{
+                    "@type":"WebPage",
+                    "@id":"${SITE_URL}/posts/yt2mp3_EN"",
+                    "name":"My first React app"
+                  }
+                },
+                {
+                  "@type":"ListItem",
+                  "position":"4",
+                  "item":{
+                    "@type":"WebPage",
+                    "@id":"${SITE_URL}/posts/pentest_EN"",
+                    "name":"Becoming a junior pentester"
+                  }
+                }
+              ]
+            }
           }`,
         }}
       />
@@ -103,13 +162,23 @@ const Meta = () => {
             "itemListElement": [{
               "@type": "ListItem",
               "position": 1,
-              "name": "Home",
+              "name": "My portfolio",
               "item": "${SITE_URL}"
             },{
               "@type": "ListItem",
               "position": 2,
-              "name": "Last project",
+              "name": "Last project in Typescript",
               "item": "${SITE_URL}/posts/ft_transcendance_EN"
+            },{
+              "@type": "ListItem",
+              "position": 3,
+              "name": "My first React app",
+              "item": "${SITE_URL}/posts/yt2mp3_EN"
+            },{
+              "@type": "ListItem",
+              "position": 4,
+              "name": "Becoming a junior pentester",
+              "item": "${SITE_URL}/posts/pentest_EN"
             }]
           }`,
         }}
