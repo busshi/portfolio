@@ -83,15 +83,15 @@ export const LINKS = [
   },
 ];
 
-export const jsonldLogo = JSON.stringify(`{
+export const jsonldLogo = `{
   "@context": "https://schema.org",
   "@type": "Organization",
   url: "${SITE_URL}",
   logo: "${SITE_URL}/images/logo.png",
-}`);
+}`;
 
 export const jsonldFaq = (langId: number) => {
-  return JSON.stringify(`{
+  return `{
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
@@ -136,5 +136,5 @@ export const jsonldFaq = (langId: number) => {
         },
       },
     ],
-  }`);
+  }`;
 };

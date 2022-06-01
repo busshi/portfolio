@@ -341,7 +341,7 @@ const Meta = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: jsonldFaq(langId),
+          __html: JSON.stringify(jsonldFaq(langId)),
         }}
       ></script>
     </Head>
