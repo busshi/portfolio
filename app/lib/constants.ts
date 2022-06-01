@@ -83,15 +83,15 @@ export const LINKS = [
   },
 ];
 
-export const jsonldLogo = `{
+export const jsonldLogo = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  url: "${SITE_URL}",
-  logo: "${SITE_URL}/images/logo.png",
-}`;
+  url: `${SITE_URL}`,
+  logo: `${SITE_URL}/images/logo.png`,
+};
 
 export const jsonldFaq = (langId: number) => {
-  return `{
+  return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     mainEntity: [
@@ -100,41 +100,41 @@ export const jsonldFaq = (langId: number) => {
         name: "Who am I?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "${BUSSHI_BIO[langId].content}",
+          text: `${BUSSHI_BIO[langId].content}`,
         },
       },
       {
         "@type": "Question",
-        name: "${LINKS[0].name}",
+        name: `${LINKS[0].name}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: '<a href="${LINKS[0].url}">${LINKS[0].name}</a>',
+          text: `<a href="${LINKS[0].url}">${LINKS[0].name}</a>`,
         },
       },
       {
         "@type": "Question",
-        name: "${LINKS[1].name}",
+        name: `${LINKS[1].name}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: '<a href="${LINKS[1].url}">${LINKS[1].name}</a>',
+          text: `<a href="${LINKS[1].url}">${LINKS[1].name}</a>`,
         },
       },
       {
         "@type": "Question",
-        name: "${LINKS[2].name}",
+        name: `${LINKS[2].name}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: '<a href="${LINKS[2].url}">${LINKS[2].name}</a>',
+          text: `<a href="${LINKS[2].url}">${LINKS[2].name}</a>`,
         },
       },
       {
         "@type": "Question",
-        name: "${LINKS[3].name}",
+        name: `${LINKS[3].name}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: '<a href="${LINKS[3].url}">${LINKS[3].name}</a>',
+          text: `<a href="${LINKS[3].url}">${LINKS[3].name}</a>`,
         },
       },
     ],
-  }`;
+  };
 };

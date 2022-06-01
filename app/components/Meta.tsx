@@ -98,7 +98,7 @@ const Meta = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: jsonldLogo,
+          __html: JSON.stringify(jsonldLogo),
         }}
       />
 
