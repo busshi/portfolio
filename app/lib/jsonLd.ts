@@ -5,6 +5,7 @@ import {
   LINKS,
   SITE_PRO,
   SITE_PRO_TITLE,
+  SITE_TITLE,
   SITE_URL,
 } from "./constants";
 
@@ -33,7 +34,7 @@ export const jsonldFaq = (langId: number) => {
         name: `${FOOTER[langId].company}`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `<a href="${SITE_PRO}">${SITE_PRO_TITLE}</a>`,
+          text: `<div><a href="${SITE_PRO}">${SITE_PRO_TITLE}</a><img src="${SITE_TITLE}/images/logo.svg" width={20} height={20}/></div>`,
         },
       },
       {
