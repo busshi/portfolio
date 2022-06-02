@@ -73,21 +73,21 @@ const Post = ({ post }: Props) => {
                       "author": [{
                         "@type": "Person",
                         "name": "${post.author.name}",
-                        "url": "${SITE_URL}"
+                        "url": "${SITE_URL}",
                       }],
                       "publisher": [{
                         "@type": "Organization",
                         "name": "${SITE_PRO_TITLE}",
                         logo: {
                           "@type": "ImageObject",
-                          url: "${SITE_URL}/images/logo.svg',
+                          url: "${SITE_URL}/images/logo.svg",
                         }
                       },{
                         "@type": "Organization",
                         "name": "${post.author.name}",
                         logo: {
                           "@type": "ImageObject",
-                          url: "${SITE_URL}/images/logo.png',
+                          url: "${SITE_URL}/images/logo.png",
                         }
                       }]
                     }`,
