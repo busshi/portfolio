@@ -12,6 +12,8 @@ import {
 export const jsonldLogo = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  name: "busshi",
+  email: "contact@busshi.fr",
   url: `${SITE_URL}`,
   logo: `${SITE_URL}/images/logo.png`,
 };
